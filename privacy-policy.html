@@ -21,6 +21,7 @@
   ul { padding-left:20px; }
   li { margin:6px 0; }
   .note { background:#fff5f7; border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin:18px 0; }
+  strong.mail { color:var(--pink); }
   footer { margin-top:44px; padding-top:18px; border-top:1px solid var(--line); }
 </style>
 </head>
@@ -31,10 +32,10 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="muted">Last updated: 26 July 2026</p>
+  <p class="muted">Last updated: 28 September 2026</p>
 
   <p>This Privacy Policy explains how <strong>Flame</strong> ("Flame", "we", "us", or "our"), operated by
-  <strong>Dhiraj Kewat</strong>, collects, uses, and shares information when you use the Flame
+  <strong>Deepak Sahani</strong>, collects, uses, and shares information when you use the Flame
   mobile application (the "App"). By creating an account or using the App, you agree to the practices
   described here.</p>
 
@@ -46,16 +47,21 @@
   <h2>1. Information We Collect</h2>
   <p>To provide a dating service, we collect the following categories of information:</p>
   <ul>
-    <li><strong>Account information:</strong> email address and authentication identifiers, managed through
+    <li><strong>Account information:</strong> your email address and authentication identifiers, managed through
       Amazon Cognito, used to create and secure your account.</li>
+    <li><strong>Information from Google Sign-In:</strong> if you choose to sign in with Google, we receive your
+      name, email address, and profile picture from your Google account. We do not receive your Google
+      password.</li>
     <li><strong>Profile information:</strong> your name, date of birth / age, gender, who you are interested in,
-      relationship goals, bio, and other details you choose to add to your profile. Some of this is considered
-      sensitive personal information.</li>
-    <li><strong>Photos and verification media:</strong> profile photos you upload and selfie images you submit
-      for verification.</li>
+      relationship goals, bio, hometown, and other details you choose to add to your profile. Some of this is
+      considered sensitive personal information.</li>
+    <li><strong>Photos:</strong> the profile photos you upload. When you add a photo, the App uses automated face
+      detection (Google ML Kit, which runs on your device) to check that the photo shows a face. This check
+      only detects whether a face is present; it does not identify you, and it does not create or store a
+      facial recognition profile.</li>
     <li><strong>Precise location:</strong> your device's location, used to show nearby people and distance.
       You can control this through your device permissions.</li>
-    <li><strong>Messages and interactions:</strong> the messages, reactions, likes, and matches you send and
+    <li><strong>Messages and interactions:</strong> the text messages, reactions, likes, and matches you send and
       receive within the App.</li>
     <li><strong>Device and usage data:</strong> device identifiers, a push-notification token (via Firebase
       Cloud Messaging), app usage, and diagnostic/crash data (via Sentry) to keep the App stable.</li>
@@ -67,7 +73,7 @@
   <ul>
     <li>To create your account, build your profile, and operate core features (feed, matching, chat).</li>
     <li>To show you relevant people based on your preferences and location.</li>
-    <li>To provide subscriptions and premium features, and to verify purchases.</li>
+    <li>To provide subscriptions and premium features, and to verify purchases with Google Play.</li>
     <li>To keep the App safe — including block/report handling, fraud prevention, and moderation.</li>
     <li>To send notifications you have enabled.</li>
     <li>To monitor performance, fix crashes, and improve the App.</li>
@@ -79,51 +85,71 @@
     <li><strong>With other users:</strong> your profile details and photos are visible to other users as part
       of the dating experience. Messages are shared with the users you chat with.</li>
     <li><strong>With service providers:</strong> we use trusted third parties to run the App, including
-      Amazon Web Services (authentication, database, storage, hosting), Google Firebase (push notifications),
-      and Sentry (crash and error reporting). They process data only to provide these services to us.</li>
-    <li><strong>For legal reasons:</strong> to comply with law, enforce our Terms, or protect the rights and
-      safety of users and the public.</li>
+      Amazon Web Services (authentication, database, storage, hosting), Google (Sign-In, Firebase push
+      notifications, and Google Play billing), and Sentry (crash and error reporting). They process data only
+      to provide these services to us.</li>
+    <li><strong>For legal reasons:</strong> to comply with law, respond to lawful requests from authorities,
+      enforce our Terms, or protect the rights and safety of users and the public.</li>
   </ul>
   <p>We do <strong>not</strong> sell your personal information.</p>
 
   <h2>4. Data Retention</h2>
   <p>We keep your information for as long as your account is active. If you delete your account, we delete or
-  anonymize your personal information within a reasonable period, except where we must retain certain data for
-  legal, safety, or fraud-prevention purposes.</p>
+  anonymize your personal information within 30 days, except where we must retain certain data for legal,
+  safety, or fraud-prevention purposes.</p>
 
   <h2>5. Deleting Your Account and Data</h2>
-  <p>You can request deletion of your account and associated personal data at any time by emailing us at
-  <strong>inflameapp.support@gmail.com</strong> (and through the in-app account settings, where available). We will process
-  your request in line with applicable law.</p>
+  <p>You can delete your account at any time from within the App (<strong>Profile → Settings → Account &amp;
+  Security → Delete Account</strong>), or by emailing us at
+  <strong class="mail">inflameapp.support@gmail.com</strong>. See our
+  <a href="./delete-account.html">Account Deletion page</a> for details on what is deleted and what may be
+  retained.</p>
 
   <h2>6. Security</h2>
-  <p>We use industry-standard measures to protect your information, including encrypted authentication tokens
-  and access controls. No method of transmission or storage is completely secure, so we cannot guarantee
-  absolute security.</p>
+  <p>We use industry-standard measures to protect your information, including encrypted connections, encrypted
+  authentication tokens, and access controls. No method of transmission or storage is completely secure, so we
+  cannot guarantee absolute security.</p>
 
   <h2>7. Your Rights</h2>
-  <p>Depending on where you live, you may have the right to access, correct, or delete your personal
-  information, or object to certain processing. To exercise these rights, contact us at
-  <strong>inflameapp.support@gmail.com</strong>.</p>
+  <p>Depending on where you live, including under India's Digital Personal Data Protection Act, 2023, you may
+  have the right to access, correct, or delete your personal information, withdraw consent, or object to
+  certain processing. To exercise these rights, contact us at
+  <strong class="mail">inflameapp.support@gmail.com</strong>.</p>
 
   <h2>8. Children's Privacy</h2>
   <p>Flame is not directed to children. We do not knowingly collect information from anyone under 18. If we
-  learn that we have collected such information, we will delete it.</p>
+  learn that we have collected such information, we will delete it and remove the account. See our
+  <a href="./child-safety.html">Child Safety Standards</a>.</p>
 
-  <h2>9. International Data Transfers</h2>
-  <p>Your information may be processed and stored on servers located in regions other than your own (for
-  example, on cloud infrastructure). We take steps to ensure your information is handled in line with this
-  Policy wherever it is processed.</p>
+  <h2>9. Where Your Data Is Stored</h2>
+  <p>Your information is stored on Amazon Web Services infrastructure in the Mumbai (India) region. Some service
+  providers, such as Google and Sentry, may process limited data in other countries. We take steps to ensure your
+  information is handled in line with this Policy wherever it is processed.</p>
 
   <h2>10. Changes to This Policy</h2>
   <p>We may update this Policy from time to time. When we do, we will revise the "Last updated" date above and,
   where appropriate, notify you within the App.</p>
 
-  <h2>11. Contact Us</h2>
-  <p>If you have questions about this Privacy Policy, contact us at <strong>inflameapp.support@gmail.com</strong>.</p>
+  <h2>11. Grievance Officer</h2>
+  <p>In accordance with the Information Technology Act, 2000 and the rules made under it, the name and contact
+  details of the Grievance Officer are:</p>
+  <div class="note">
+    <strong>Deepak Sahani</strong><br>
+    Pharenda, Maharajganj, Uttar Pradesh, India<br>
+    Email: <strong class="mail">inflameapp.support@gmail.com</strong>
+  </div>
+  <p>We will acknowledge complaints within 24 hours and aim to resolve them within 15 days of receipt.</p>
+
+  <h2>12. Contact Us</h2>
+  <p>If you have questions about this Privacy Policy, contact us at
+  <strong class="mail">inflameapp.support@gmail.com</strong>.</p>
 
   <footer>
-    <p class="muted">Flame is operated by Dhiraj Kewat, Nawalparasi, Nepal.</p>
+    <p class="muted">See also our
+      <a href="./terms.html">Terms of Service</a>,
+      <a href="./delete-account.html">Account Deletion</a>, and
+      <a href="./child-safety.html">Child Safety Standards</a>.
+      Flame is operated by Deepak Sahani, Pharenda, Maharajganj, Uttar Pradesh, India.</p>
   </footer>
 </div>
 </body>
