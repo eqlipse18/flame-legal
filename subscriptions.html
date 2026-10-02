@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flame — Subscriptions &amp; Pricing</title>
+<style>
+  :root { --pink:#E6395B; --ink:#1c1c22; --muted:#5c5c66; --line:#f0dbe1; --bg:#ffffff; --gold:#D97706; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         color:var(--ink); background:var(--bg); line-height:1.65; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  header { border-bottom:2px solid var(--line); padding-bottom:18px; margin-bottom:28px; }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:800; font-size:22px; color:var(--pink); }
+  .brand span { color:var(--ink); }
+  h1 { font-size:26px; margin:22px 0 4px; }
+  h2 { font-size:19px; margin:34px 0 8px; }
+  p, li { font-size:15.5px; }
+  .muted { color:var(--muted); font-size:14px; }
+  a { color:var(--pink); }
+  ul, ol { padding-left:20px; }
+  li { margin:6px 0; }
+  .note { background:#fff5f7; border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin:18px 0; }
+  .plans { display:grid; grid-template-columns:1fr; gap:14px; margin:18px 0; }
+  @media (min-width:640px) { .plans { grid-template-columns:1fr 1fr; } }
+  .plan { border:1px solid var(--line); border-radius:14px; padding:16px 18px; }
+  .plan h3 { margin:0 0 6px; font-size:18px; }
+  .plan.plus h3 { color:var(--pink); }
+  .plan.ultra h3 { color:var(--gold); }
+  .plan ul { margin:8px 0 0; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:15px; }
+  th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); }
+  th { font-weight:700; }
+  strong.mail { color:var(--pink); }
+  footer { margin-top:44px; padding-top:18px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">🔥 Flame <span>&nbsp;by Eqlipse</span></div>
+  </header>
+
+  <h1>Subscriptions &amp; Pricing</h1>
+  <p class="muted">Last updated: 2 October 2026</p>
+
+  <p>Flame is free to use. You can create a profile, swipe, match and chat without paying. Two optional
+  subscriptions, <strong>Flame Plus</strong> and <strong>Flame Ultra</strong>, unlock extra features. This page
+  explains what each plan includes, how billing works, and how to cancel.</p>
+
+  <h2>What each plan includes</h2>
+  <div class="plans">
+    <div class="plan plus">
+      <h3>Flame Plus</h3>
+      <ul>
+        <li>See who liked you</li>
+        <li>See who viewed your profile</li>
+        <li>5 Superlikes per day</li>
+        <li>10 Rewinds per day</li>
+        <li>1 message request per day</li>
+        <li>Advanced filters</li>
+        <li>Hide your last seen and online status</li>
+        <li>Chat with all your matches</li>
+      </ul>
+    </div>
+    <div class="plan ultra">
+      <h3>Flame Ultra</h3>
+      <ul>
+        <li>Everything in Flame Plus</li>
+        <li>Unlimited Superlikes</li>
+        <li>Unlimited Rewinds</li>
+        <li>Unlimited message requests</li>
+        <li>Ultra badge on your profile</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Free plan</h2>
+  <p>Without a subscription you can create a profile, swipe, match, and chat with your first matches. Likes you
+  receive are shown as blurred previews.</p>
+
+  <h2>Plan lengths and prices</h2>
+  <table>
+    <thead><tr><th>Plan</th><th>Billing periods</th></tr></thead>
+    <tbody>
+      <tr><td>Flame Plus</td><td>1 month, 3 months, 6 months</td></tr>
+      <tr><td>Flame Ultra</td><td>1 month, 3 months, 6 months</td></tr>
+    </tbody>
+  </table>
+  <p>Longer plans cost less per month. Prices are set in your local currency by Google Play and may differ by
+  country. The exact price, including any applicable taxes, is always shown in the app and on the Google Play
+  payment screen before you confirm a purchase.</p>
+
+  <h2>How billing works</h2>
+  <ul>
+    <li>All payments are processed by <strong>Google Play</strong> and charged to the payment method on your Google
+      account. Flame does not see or store your card details.</li>
+    <li><strong>Auto-renewal:</strong> your subscription renews automatically at the end of each billing period, for
+      the same length and at the then-current price, unless you cancel at least 24 hours before the period ends.</li>
+    <li>Price changes: if the price of your plan changes, Google Play will notify you before the new price applies,
+      as required by Google Play's policies.</li>
+    <li>Changing plans: you can upgrade or downgrade from the Premium screen in the app. Google Play handles any
+      proration or timing of the change.</li>
+  </ul>
+
+  <h2>How to cancel</h2>
+  <ol>
+    <li>Open the <strong>Google Play Store</strong> app.</li>
+    <li>Tap your profile picture, then <strong>Payments &amp; subscriptions → Subscriptions</strong>.</li>
+    <li>Select <strong>Flame</strong> and tap <strong>Cancel subscription</strong>.</li>
+  </ol>
+  <p>You can also open this page from <strong>Settings → Manage subscription</strong> in the Flame app.</p>
+  <p>When you cancel, you keep premium features until the end of the period you already paid for. After that,
+  your account returns to the free plan; your profile, matches and chats are not deleted.</p>
+
+  <div class="note">
+    <strong>Deleting your Flame account does not cancel your subscription.</strong> Please cancel in Google Play
+    first to avoid further charges.
+  </div>
+
+  <h2>Restoring a purchase</h2>
+  <p>If you reinstall Flame or switch phones, sign in with the same Flame account and the same Google account, then
+  tap <strong>Restore purchases</strong> on the Premium screen.</p>
+
+  <h2>Refunds</h2>
+  <p>See our <a href="./refund-policy.html">Refund Policy</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about billing? Email <strong class="mail">inflameapp.support@gmail.com</strong>.</p>
+
+  <footer>
+    <p class="muted">See also our
+      <a href="./terms.html">Terms of Service</a>,
+      <a href="./refund-policy.html">Refund Policy</a>, and
+      <a href="./privacy-policy.html">Privacy Policy</a>.
+      Flame is operated by Deepak Sahani, Pharenda, Maharajganj, Uttar Pradesh, India.</p>
+  </footer>
+</div>
+</body>
+</html>
